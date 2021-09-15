@@ -1,0 +1,27 @@
+server:
+  port: 8001
+
+# Spring配置
+spring:
+  # MQTT
+  mqtt:
+    # 服务器连接地址，如果有多个，用逗号隔开
+    host: tcp://112.74.180.80:1883
+    # 连接服务器默认客户端ID
+    clientId: mqtt_client_id_001
+    # 默认的消息推送主题，实际可在调用接口时指定
+    topic: mqtt_topic_101,mqtt_topic_102,mqtt_topic_103
+    # 用户名
+    username: admin
+    # 密码
+    password: public
+    # 连接超时
+    timeout: 30
+    # 心跳
+    keepalive: 30
+  rabbitmq:
+    addresses: 112.74.180.80
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: /ems

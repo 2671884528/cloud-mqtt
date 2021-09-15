@@ -1,0 +1,5 @@
+# Project exclude paths
+/clientOne/target/
+/clientThree/target/
+/clientTwo/target/
+/product/target/

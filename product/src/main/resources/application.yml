@@ -1,0 +1,10 @@
+
+spring:
+  rabbitmq:
+    addresses: 112.74.180.80
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: /ems
+server:
+  port: 9001
